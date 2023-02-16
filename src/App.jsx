@@ -1,10 +1,15 @@
+import PageAside from "./components/PageAside";
+import Products from "./components/cardProducts";
 
+import Navbar from "./components/navbar";
 
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline"> Hola Mundo!</h1>
+      <Navbar />
+      <PageAside />
+      <Products />
     </>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <>
-      <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <nav class="block z-auto w-full bg-slate-800">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
           <div class="flex items-center justify-between">
             <div class="flex items-center justify-start">
@@ -29,14 +29,14 @@ export default function Navbar() {
                   ></path>
                 </svg>
               </button>
-              <a href="https://flowbite.com" class="flex ml-2 md:mr-24">
+              <a href="#" class="flex ml-2 md:mr-24">
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
                   class="h-8 mr-3"
                   alt="FlowBite Logo"
                 />
-                <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
-                  Flowbite
+                <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">
+                  Shop
                 </span>
               </a>
             </div>
@@ -58,21 +58,21 @@ export default function Navbar() {
                   </button>
                 </div>
                 <div
-                  class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                  class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-slate-100 rounded shadow "
                   id="dropdown-user"
                 >
                   <div class="px-4 py-3" role="none">
                     <p
-                      class="text-sm text-gray-900 dark:text-white"
+                      class="text-sm text-white "
                       role="none"
                     >
-                      Neil Sims
+                     *Aquí va el usuario que venga de la DB*
                     </p>
                     <p
                       class="text-sm font-medium text-gray-900 truncate dark:text-gray-300"
                       role="none"
                     >
-                      neil.sims@flowbite.com
+                      *Aquí va el correo que venga de la DB*
                     </p>
                   </div>
                   <ul class="py-1" role="none">
@@ -82,7 +82,7 @@ export default function Navbar() {
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                         role="menuitem"
                       >
-                        Dashboard
+                        ..//./../..
                       </a>
                     </li>
                     <li>
@@ -91,7 +91,7 @@ export default function Navbar() {
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                         role="menuitem"
                       >
-                        Settings
+                        Configuración de la Cuenta
                       </a>
                     </li>
                     <li>
@@ -100,7 +100,7 @@ export default function Navbar() {
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                         role="menuitem"
                       >
-                        Earnings
+                        Productos
                       </a>
                     </li>
                     <li>
@@ -109,7 +109,7 @@ export default function Navbar() {
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                         role="menuitem"
                       >
-                        Sign out
+                        Cerrar Sesión
                       </a>
                     </li>
                   </ul>
