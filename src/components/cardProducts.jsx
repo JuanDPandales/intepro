@@ -31,7 +31,7 @@ export default function Products(productos) {
               </div>
 
               <div className="mt-4 p-4">
-                <h2 className="text-slate-700">*Título del Producto*</h2>
+                <h2 className="text-slate-700">{productos.products.title}</h2>
                 <p className="mt-1 text-sm text-slate-400">
                   *Descripción del Producto*
                 </p>
