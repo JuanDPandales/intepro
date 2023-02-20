@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function AccLog() {
   return (
@@ -47,7 +47,9 @@ export default function AccLog() {
               </div>
               {/*Contraseña Olvidada (Hipervínculo)*/}
               <div className="flex items-center justify-center">
-                <Link to={"../sessions/ChangePassword.js"}>¿Olvidaste la contraseña? Haz click aquí para cambiarla</Link>
+                <Link to={"../sessions/ChangePassword.js"}>
+                  ¿Olvidaste la contraseña? Haz click aquí para cambiarla
+                </Link>
               </div>
 
               {/*Botón de Acceder */}

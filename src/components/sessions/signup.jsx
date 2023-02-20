@@ -1,7 +1,6 @@
 import React from "react";
 import LogIn from "./sessions/AccLog";
 
-
 export default function SignUp() {
   return (
     <>
@@ -13,7 +12,9 @@ export default function SignUp() {
             <h1 className="text-2xl font-bold leading-tight tracking-tight px-2 text-zinc-900 md:text-3xl dark:text-white">
               Crear Cuenta
             </h1>
-            <form className="space-y-4 md:space-y-2" action="#"> {/* Poner método post */}
+            <form className="space-y-4 md:space-y-2" action="#">
+              {" "}
+              {/* Poner método post */}
               <div className="block text-md px-2 mt-6">
                 <label
                   for="name"
@@ -85,10 +86,9 @@ export default function SignUp() {
                 />
               </div>
               {/*Fin Contraseña*/}
-
               {/*Botón de Acceder */}
               <button
-                onClick={<LogIn/>}
+                onClick={<LogIn />}
                 type="submit"
                 className="w-full text-primary bg-primary-600 focus:ring-4 focus:outline-none focus:ring-green-600 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-green-400 dark:focus:ring-primary-800"
               >

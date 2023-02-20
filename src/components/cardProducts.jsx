@@ -1,102 +1,70 @@
-export default function Products() {
+export default function Products(productos) {
+  console.log(productos);
+
   return (
     <>
-      <div className="p-4 sm:ml-64">
-        <div className="px-2 py-2">
-          <div className="grid grid-cols-4 gap-64 mb-4 ">
-            <div classNameName="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read more
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div classNameName="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read more
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div classNameName="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read more
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+      <section className="py-10 bg-gray-100">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+            <a href="#">
+              <div className="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="Hotel Photo"
+                />
+                <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="mt-4 p-4">
+                <h2 className="text-slate-700">*Título del Producto*</h2>
+                <p className="mt-1 text-sm text-slate-400">
+                  *Descripción del Producto*
+                </p>
+
+                <div className="mt-3 flex items-end justify-between">
+                  <p className="text-lg font-bold text-blue-500">
+                    *Precio del Producto*
+                  </p>
+
+                  <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+
+                    <button className="text-sm">*Agregar*</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
-      </div>
+      </section>
     </>
   );
 }
