@@ -1,18 +1,16 @@
-
+import { Link } from "react-router-dom";
 
 export default function ShowProducts(productos) {
-  console.log(productos);
-
   return (
     <>
-    <section className="py-10 bg-gray-100">
+      <section className="py-10 bg-gray-100">
         <div className="mx-auto grid max-w-7xl grid-cols-1 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
-            <a href="#">
+            <Link to="/">
               <div className="relative flex items-end overflow-hidden rounded-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="Hotel Photo"
+                  src={productos.products.thumbnail}
+                  alt={productos.products.brand}
                 />
                 <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
                   <svg
@@ -33,17 +31,19 @@ export default function ShowProducts(productos) {
               </div>
 
               <div className="mt-4 p-4">
-                <h2 className="text-slate-700">11</h2>
+                <h2 className="text-blue-700 font-bold">
+                  {productos.products.title}
+                </h2>
                 <p className="mt-1 text-sm text-slate-400">
-                  {}
+                  {productos.products.description}
                 </p>
 
                 <div className="mt-3 flex items-end justify-between">
-                  <p className="text-lg font-bold text-blue-500">
-                    {productos.products.price}
+                  <p className="text-lg font-bold text-slate-800">
+                    ${productos.products.price}
                   </p>
 
-                  <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                  <div className="flex items-center space-x-1.5 rounded-lg bg-green-500 px-4 py-1.5 text-white duration-100 hover:bg-green-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -59,15 +59,14 @@ export default function ShowProducts(productos) {
                       />
                     </svg>
 
-                    <button className="text-sm">*Agregar*</button>
+                    <button className="text-sm">Agregar</button>
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </article>
         </div>
       </section>
-      
     </>
   );
 }

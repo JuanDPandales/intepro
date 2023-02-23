@@ -1,4 +1,5 @@
 import ShowProducts from "./ShowProducts";
+import Footer from "./Footer";
 import {products as productos} from '../services/dataProd.json'
 
 
