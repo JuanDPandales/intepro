@@ -1,4 +1,6 @@
-import React from "react";
+import ShowProducts from "./ShowProducts";
+import {products as productos} from '../services/dataProd.json'
+
 
 export default function HeroSection() {
   return (
@@ -8,6 +10,8 @@ export default function HeroSection() {
           Productos
         </h1>
       </div>
+      <ShowProducts products={productos[1]}/>
+      <Footer />
     </>
   );
 }

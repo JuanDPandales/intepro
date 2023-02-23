@@ -1,9 +1,11 @@
-export default function Products(productos) {
+
+
+export default function ShowProducts(productos) {
   console.log(productos);
 
   return (
     <>
-      <section className="py-10 bg-gray-100">
+    <section className="py-10 bg-gray-100">
         <div className="mx-auto grid max-w-7xl grid-cols-1 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
             <a href="#">
@@ -31,14 +33,14 @@ export default function Products(productos) {
               </div>
 
               <div className="mt-4 p-4">
-                <h2 className="text-slate-700">{productos.products.title}</h2>
+                <h2 className="text-slate-700">11</h2>
                 <p className="mt-1 text-sm text-slate-400">
-                  *Descripción del Producto*
+                  {}
                 </p>
 
                 <div className="mt-3 flex items-end justify-between">
                   <p className="text-lg font-bold text-blue-500">
-                    *Precio del Producto*
+                    {productos.products.price}
                   </p>
 
                   <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
@@ -65,6 +67,7 @@ export default function Products(productos) {
           </article>
         </div>
       </section>
+      
     </>
   );
 }

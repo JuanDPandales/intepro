@@ -1,5 +1,3 @@
-import React from "react";
-import LogIn from "./sessions/AccLog";
 
 export default function SignUp() {
   return (
@@ -88,7 +86,7 @@ export default function SignUp() {
               {/*Fin Contraseña*/}
               {/*Botón de Acceder */}
               <button
-                onClick={<LogIn />}
+                //onClick={<LogIn />}
                 type="submit"
                 className="w-full text-primary bg-primary-600 focus:ring-4 focus:outline-none focus:ring-green-600 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-green-400 dark:focus:ring-primary-800"
               >

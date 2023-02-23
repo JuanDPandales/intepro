@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
-import SignUp from "./sessions/signup";
+// Uso las etiquetas "Link" para hacer la navegación mucho más rápida sin tener que rendizar cada componente de nuevo
+// Outlet hace que los elementos children se rendericen 
+import { Link, Outlet} from "react-router-dom";
 
-export default function Navbar() {
+
+export default function HomePage() {
   return (
     <>
       <div className="bg-white">
         <nav className="fixed w-full border-b border-gray-200 bg-white py-2.5 px-6 sm:px-4">
           <div className="flex flex-wrap container mx-auto max-w-6xl items-center justify-between">
-            <a href="#" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -26,21 +28,23 @@ export default function Navbar() {
               <span className="self-center whitespace-nowrap text-xl font-semibold">
                 Tienda
               </span>
-            </a>
-            <div className="mt-2 sm:mt-0 sm:flex md:order-2">
-              <a href="/signup"
+            </Link>
+            <div className="mt-2 sm:mt-0 sm:flex md:order-2 gap-4">
+              <Link
+                to="/signup"
                 type="button"
                 className="mr-3 hidden bg-blue-700 py-1.5 px-6 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0 md:inline-block rounded-lg"
               >
                 Registrarse
-              </a>
+              </Link>
 
-              <button
+              <Link
+                to="/login"
                 type="button"
                 className="mr-3 hidden border border-blue-700 py-1.5 px-6 text-center text-sm font-medium text-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 md:inline-block rounded-lg"
               >
                 Iniciar Sesión
-              </button>
+              </Link>
 
               <button
                 data-collapse-toggle="navbar-sticky"
@@ -71,44 +75,44 @@ export default function Navbar() {
             >
               <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0 md:text-blue-700"
                     aria-current="page"
                   >
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                   >
                     ***
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                   >
                     ***
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/about"
                     className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                   >
-                    ***
-                  </a>
+                    Acerca de
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+        <Outlet />
       </div>
     </>
   );
 }
-
