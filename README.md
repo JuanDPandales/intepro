@@ -1,8 +1,12 @@
 # Enunciado
 
-Cosas por implementar
-
+Implementaciones de 23/02/2023:
+- [x] Organizar Archivos
 - [x] Muestra una lista de productos que vienen de un JSON
+- [x] Arreglar routing (react-router-dom)
+
+Por implementar: 
+- [] Terminar de estilar los formularios de crear cuenta
 - [] Hipervínculos del footer
 - [] Añade un filtro por categoría
 - [] Añade un filtro por precio
