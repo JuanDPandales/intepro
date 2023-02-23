@@ -7,10 +7,7 @@ import HomePage from "./components/HomePage.jsx";
 import SignUp from "./components/sessions/SignUp.jsx";
 import AccLog from "./components/sessions/AccLog.jsx";
 import HeroSection from "./components/HeroSection.jsx";
-import Footer from "./components/footer.jsx";
-
-
-
+import About from "./components/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,15 +19,19 @@ const router = createBrowserRouter([
         path: "/",
         element: <HeroSection />,
       },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/login",
+        element: <AccLog />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
     ],
-  },
-  {
-    path: "/signup",
-    element: <SignUp />,
-  },
-  {
-    path: "/login",
-    element: <AccLog />,
   },
 ]);
 
