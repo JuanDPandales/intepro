@@ -8,6 +8,7 @@ import SignUp from "./components/sessions/SignUp.jsx";
 import AccLog from "./components/sessions/AccLog.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import About from "./components/About.jsx";
+import Carrito from "./components/Carrito.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,8 +32,13 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        path: "/carrito",
+        element: <Carrito />,
+      },
     ],
   },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

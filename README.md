@@ -8,8 +8,7 @@ Implementaciones de 23/02/2023:
 Por implementar: 
 - [] Terminar de estilar los formularios de crear cuenta
 - [] Hipervínculos del footer
-- [] Añade un filtro por categoría
-- [] Añade un filtro por precio
+- [] Carrito de Compra
 
 Carrito:
 
